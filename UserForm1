@@ -1,0 +1,474 @@
+Private Sub ComboBox1_DropButtonClick()
+  ComboBox1.List = Worksheets("DATA SHEET").Range("A2:A4").Value
+End Sub
+
+Private Sub ComboBox2_DropButtonClick()
+  ComboBox2.List = Worksheets("DATA SHEET").Range("G2:G38").Value
+End Sub
+
+Private Sub ComboBox3_DropButtonClick()
+  ComboBox3.List = Worksheets("DATA SHEET").Range("C2:C7").Value
+End Sub
+
+Private Sub ComboBox4_DropButtonClick()
+  ComboBox4.List = Worksheets("DATA SHEET").Range("I2:I15").Value
+End Sub
+
+Private Sub CommandButton4_Click()
+  UserForm2.Show
+End Sub
+
+Private Sub EIBM_DropButtonClick()
+  EIBM.List = Worksheets("DATA SHEET").Range("e2:e13").Value
+End Sub
+
+Private Sub EIEM_DropButtonClick()
+  EIEM.List = Worksheets("DATA SHEET").Range("e2:e13").Value
+End Sub
+
+Private Sub EOEM_DropButtonClick()
+  EOEM.List = Worksheets("DATA SHEET").Range("e2:e13").Value
+End Sub
+
+Private Sub IM_DropButtonClick()
+  IM.List = Worksheets("DATA SHEET").Range("e2:e13").Value
+End Sub
+
+Private Sub SATIR1()
+  If EDP1.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 4).Value = EDP1.Value
+    Cells(WriteRow, 5).Value = MODEL1.Value
+    Cells(WriteRow, 6).Value = UNIT1.Value
+    Cells(WriteRow, 7).Value = SERIAL1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 16).Value = REVENUE.Value
+  End If
+End Sub
+
+Private Sub SATIR2()
+  If EDP2.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 4).Value = EDP2.Value
+    Cells(WriteRow, 5).Value = MODEL2.Value
+    Cells(WriteRow, 6).Value = UNIT2.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+  End If
+End Sub
+
+Private Sub SATIR3()
+  If EDP3.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 4).Value = EDP3.Value
+    Cells(WriteRow, 5).Value = MODEL3.Value
+    Cells(WriteRow, 6).Value = UNIT3.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+  End If
+End Sub
+
+Private Sub SATIR4()
+  If EDP4.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 4).Value = EDP4.Value
+    Cells(WriteRow, 5).Value = MODEL4.Value
+    Cells(WriteRow, 6).Value = UNIT4.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+  End If
+End Sub
+....                        'Same to Private Sub SATIR20()
+
+Private Sub SATIR21()
+  Dim Bul2 As Range
+  Set Bul2 = Sheets("config list").Columns(2).Find(what:=UserForm2.RENK1.Value, LookIn:=xlValues, LookAt:=xlWhole, SearchOrder:=xlByRows, SearchDirection:=xlNext, MatchCase:=False)
+  If UserForm2.CheckBox1.Value = False Or EDP1.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(0, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(0, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(0, 3).Value
+
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(1, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(1, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(1, 3).Value
+
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(2, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(2, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(2, 3).Value
+  End If
+End Sub
+
+Private Sub SATIR22()
+  Dim Bul2 As Range
+  Set Bul2 = Sheets("config list").Columns(2).Find(what:=UserForm2.RENK2.Value, LookIn:=xlValues, LookAt:=xlWhole, SearchOrder:=xlByRows, SearchDirection:=xlNext, MatchCase:=False)
+  If UserForm2.CheckBox2.Value = False Or EDP1.Value = "" Or REVENUE.Value = "" Or ComboBox3.Value = "" Or (CheckBox1.Value = True And SERIAL1.Value = "") Then
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ""
+    Cells(WriteRow, 2).Value = ""
+    Cells(WriteRow, 3).Value = ""
+    Cells(WriteRow, 4).Value = ""
+    Cells(WriteRow, 5).Value = ""
+    Cells(WriteRow, 6).Value = ""
+    Cells(WriteRow, 7).Value = ""
+    Cells(WriteRow, 8).Value = ""
+    Cells(WriteRow, 9).Value = ""
+    Cells(WriteRow, 10).Value = ""
+    Cells(WriteRow, 11).Value = ""
+    Cells(WriteRow, 12).Value = ""
+    Cells(WriteRow, 13).Value = ""
+    Cells(WriteRow, 14).Value = ""
+    Cells(WriteRow, 15).Value = ""
+    Cells(WriteRow, 16).Value = ""
+  Else
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(0, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(0, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(0, 3).Value
+
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(1, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(1, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(1, 3).Value
+
+    WriteRow = WorksheetFunction.CountA(Range("A:A")) + 1
+    Cells(WriteRow, 1).Value = ComboBox1.Value
+    Cells(WriteRow, 2).Value = ComboBox4.Value
+    Cells(WriteRow, 3).Value = TextBox1.Value
+    Cells(WriteRow, 8).Value = ComboBox3.Value
+    Cells(WriteRow, 9).Value = EIBM.Value
+    Cells(WriteRow, 10).Value = EIEM.Value
+    Cells(WriteRow, 11).Value = CSD.Value
+    Cells(WriteRow, 12).Value = TD.Value
+    Cells(WriteRow, 13).Value = EOEM.Value
+    Cells(WriteRow, 14).Value = ONO.Value
+    Cells(WriteRow, 15).Value = IM.Value
+    Cells(WriteRow, 4).Value = Bul2.Offset(2, 2).Value
+    Cells(WriteRow, 5).Value = Bul2.Offset(2, 1).Value
+    Cells(WriteRow, 6).Value = Bul2.Offset(2, 3).Value
+  End If
+End Sub
+....                        'Same to Private Sub SATIR35()
+
+Private Sub CommandButton3_Click()
+
+  Dim Bul As Range
+  If ComboBox2.Value <> "" Then
+    Set Bul = Sheets("config list").Columns(2).Find(what:=ComboBox2.Value, LookIn:=xlValues, LookAt:=xlWhole, SearchOrder:=xlByRows, SearchDirection:=xlNext, MatchCase:=False)
+    EDP1.Text = Bul.Offset(0, 2).Value
+    EDP2.Text = Bul.Offset(1, 2).Value
+    EDP3.Text = Bul.Offset(2, 2).Value
+    EDP4.Text = Bul.Offset(3, 2).Value
+    EDP5.Text = Bul.Offset(4, 2).Value
+    EDP6.Text = Bul.Offset(5, 2).Value
+    EDP7.Text = Bul.Offset(6, 2).Value
+    EDP8.Text = Bul.Offset(7, 2).Value
+    EDP9.Text = Bul.Offset(8, 2).Value
+    EDP10.Text = Bul.Offset(9, 2).Value
+    EDP11.Text = Bul.Offset(10, 2).Value
+    EDP12.Text = Bul.Offset(11, 2).Value
+    EDP13.Text = Bul.Offset(12, 2).Value
+    EDP14.Text = Bul.Offset(13, 2).Value
+    EDP15.Text = Bul.Offset(14, 2).Value
+    EDP16.Text = Bul.Offset(15, 2).Value
+    EDP17.Text = Bul.Offset(16, 2).Value
+    EDP18.Text = Bul.Offset(17, 2).Value
+    EDP19.Text = Bul.Offset(18, 2).Value
+    EDP20.Text = Bul.Offset(19, 2).Value
+    MODEL1.Text = Bul.Offset(0, 1).Value
+    MODEL2.Text = Bul.Offset(1, 1).Value
+    MODEL3.Text = Bul.Offset(2, 1).Value
+    MODEL4.Text = Bul.Offset(3, 1).Value
+    MODEL5.Text = Bul.Offset(4, 1).Value
+    MODEL6.Text = Bul.Offset(5, 1).Value
+    MODEL7.Text = Bul.Offset(6, 1).Value
+    MODEL8.Text = Bul.Offset(7, 1).Value
+    MODEL9.Text = Bul.Offset(8, 1).Value
+    MODEL10.Text = Bul.Offset(9, 1).Value
+    MODEL11.Text = Bul.Offset(10, 1).Value
+    MODEL12.Text = Bul.Offset(11, 1).Value
+    MODEL13.Text = Bul.Offset(12, 1).Value
+    MODEL14.Text = Bul.Offset(13, 1).Value
+    MODEL15.Text = Bul.Offset(14, 1).Value
+    MODEL16.Text = Bul.Offset(15, 1).Value
+    MODEL17.Text = Bul.Offset(16, 1).Value
+    MODEL18.Text = Bul.Offset(17, 1).Value
+    MODEL19.Text = Bul.Offset(18, 1).Value
+    MODEL20.Text = Bul.Offset(19, 1).Value
+    UNIT1.Text = Bul.Offset(0, 3).Value
+    UNIT2.Text = Bul.Offset(1, 3).Value
+    UNIT3.Text = Bul.Offset(2, 3).Value
+    UNIT4.Text = Bul.Offset(3, 3).Value
+    UNIT5.Text = Bul.Offset(4, 3).Value
+    UNIT6.Text = Bul.Offset(5, 3).Value
+    UNIT7.Text = Bul.Offset(6, 3).Value
+    UNIT8.Text = Bul.Offset(7, 3).Value
+    UNIT9.Text = Bul.Offset(8, 3).Value
+    UNIT10.Text = Bul.Offset(9, 3).Value
+    UNIT11.Text = Bul.Offset(10, 3).Value
+    UNIT12.Text = Bul.Offset(11, 3).Value
+    UNIT13.Text = Bul.Offset(12, 3).Value
+    UNIT14.Text = Bul.Offset(13, 3).Value
+    UNIT15.Text = Bul.Offset(14, 3).Value
+    UNIT16.Text = Bul.Offset(15, 3).Value
+    UNIT17.Text = Bul.Offset(16, 3).Value
+    UNIT18.Text = Bul.Offset(17, 3).Value
+    UNIT19.Text = Bul.Offset(18, 3).Value
+    UNIT20.Text = Bul.Offset(19, 3).Value
+  End If
+
+End Sub
+
+Private Sub CommandButton1_Click()
+  Worksheets("Current Forecast").Activate   'Current Forecast is the Excel Sheet name and it is activated by this command
+
+  Dim WriteRow As Long                      
+  Dim Ctrl As MSForms.Control
+  Dim N As Long
+  N = 0
+  For Each Ctrl In UserForm2.Controls        'We are counting checkboxes that are not checked
+    If TypeOf Ctrl Is MSForms.CheckBox Then
+      If Ctrl = False Then
+        N = N + 1
+      End If
+    End If
+  Next Ctrl
+
+  If REVENUE.Value = "" Then                 'These are the controls before adding a record
+    MsgBox "Please Enter a REVENUE"
+  ElseIf ComboBox3.Value = "" Then
+    MsgBox "Please Enter %WIN "
+  ElseIf CheckBox1.Value = True And SERIAL1.Value = "" Then
+    MsgBox "Please Enter SERIAL NUMBER "
+  ElseIf EDP1.Value = "" Then
+    MsgBox "Please Enter PRODUCTS "
+  ElseIf ComboBox2.Value Like "*X" And N = 15 Then        'This is the checkbox that are not checked control
+    MsgBox "Please Enter 5TH COLOUR "
+    Exit Sub
+  End If
+ 
+  Call SATIR1
+  Call SATIR2
+  Call SATIR3
+  Call SATIR4
+  Call SATIR5
+  Call SATIR6
+  Call SATIR7
+  Call SATIR8
+  Call SATIR9
+  Call SATIR10
+  Call SATIR11
+  Call SATIR12
+  Call SATIR13
+  Call SATIR14
+  Call SATIR15
+  Call SATIR16
+  Call SATIR17
+  Call SATIR18
+  Call SATIR19
+  Call SATIR20
+  Call SATIR21
+  Call SATIR22
+  Call SATIR23
+  Call SATIR24
+  Call SATIR25
+  Call SATIR26
+  Call SATIR27
+  Call SATIR28
+  Call SATIR29
+  Call SATIR30
+  Call SATIR31
+  Call SATIR32
+  Call SATIR33
+  Call SATIR34
+  Call SATIR35
+
+  Unload Me
+  UserForm1.Show
+  Unload UserForm2
+
+End Sub
